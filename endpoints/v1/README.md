@@ -1,0 +1,2 @@
+﻿# Endpoints Folder
+Place custom endpoints here! Version 1 folder is already set up, it's useful to place things in an order and also name them as such in the route paths so if you make future changes you don't create back compatability issues.

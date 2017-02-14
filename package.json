@@ -1,0 +1,25 @@
+﻿{
+  "name": "simple-project-api",
+  "version": "1.0.0",
+  "description": "Simple NodeJS Mongo DB API for project scafolding or using it on it's own.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantumninja/Simple-Project-Api.git"
+  },
+  "author": "Dale Baldwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quantumninja/Simple-Project-Api/issues"
+  },
+  "homepage": "https://github.com/quantumninja/Simple-Project-Api#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-mongo-db": "^2.0.3",
+    "mongodb": "^2.2.23"
+  }
+}
