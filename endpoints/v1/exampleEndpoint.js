@@ -8,14 +8,14 @@ router.get('/', function (req, res) {
 
 // Example CRUD Routes
 
-router.post('/create/:collection', function (req, res) {
+router.post('/:collection', function (req, res) {
     var data = req.body
     var collectionId = req.params.collection
     req.db.collection(collectionId).insert(data)
     res.send('Document Created ')
 })
 
-router.get('/read/:collection/:id', function (req, res) {
+router.get('/:collection/:id', function (req, res) {
     var documentId = req.params.id
     var collectionId = req.params.collection
     req.db.collection(collectionId).find({ "_id": new ObjectId(documentId) }).toArray(function (error, documents) {
@@ -27,7 +27,7 @@ router.get('/read/:collection/:id', function (req, res) {
     })
 })
 
-router.post('/update/:collection/:id', function (req, res) {
+router.put('/:collection/:id', function (req, res) {
     var documentId = req.params.id
     var collectionId = req.params.collection
     req.db.collection(collectionId).find({ "_id": new ObjectId(documentId) }).toArray(function (error, documents) {
@@ -40,7 +40,7 @@ router.post('/update/:collection/:id', function (req, res) {
     })
 })
 
-router.post('/delete/:collection/:id', function (req, res) {
+router.delete('/:collection/:id', function (req, res) {
     var documentId = req.params.id
     var collectionId = req.params.collection
     req.db.collection(collectionId).find({ "_id": new ObjectId(documentId) }).toArray(function (error, documents) {
