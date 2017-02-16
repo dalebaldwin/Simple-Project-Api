@@ -1,0 +1,6 @@
+﻿{
+    "apiName": "MyapiName",
+    "apiVersion": "1.0.0",
+    "apiPort": 3000,
+    "database": "databaseName"
+}
